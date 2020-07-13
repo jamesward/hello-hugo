@@ -26,6 +26,12 @@ steps:
 
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
+    - services
+    - enable
+    - run.googleapis.com
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
   - run
   - deploy
   - --image=gcr.io/$PROJECT_ID/$REPO_NAME-$BRANCH_NAME:$COMMIT_SHA
