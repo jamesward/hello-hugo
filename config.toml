@@ -1,0 +1,9 @@
+baseURL = "/"
+languageCode = "en-us"
+
+title = "Hello Hugo"
+name = "John Doe"
+description = "hello, world"
+
+theme = "mainroad"
+paginate = "10"
